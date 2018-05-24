@@ -1,0 +1,178 @@
+@import url(reset.css);
+body{
+    background: #f9c991;
+    font: 14px/1.5 Arial, Verdana, sans-serif;    
+}
+#Glavna{
+  
+	height: 600px;
+  overflow: hidden;
+}
+#Glavna img{
+ 
+  width: 450px;
+
+}
+.detpul{
+	position: absolute;
+  top: 100px;
+}
+.harli{
+	position: absolute;
+  top: -15px;
+  left:810px;
+}
+.dd{
+  position: absolute; 
+  left: -10px;
+  position:relative;
+	width:340px;
+	padding:50px 30px;
+	margin:0 auto 50px;
+	text-align:center;
+	color:#54f9f7;
+	background:#bdbbbb;
+	-webkit-border-top-left-radius:220px 120px;
+	-webkit-border-top-right-radius:220px 120px;
+	-webkit-border-bottom-right-radius:220px 120px;
+	-webkit-border-bottom-left-radius:220px 120px;
+	-moz-border-radius:220px / 120px;
+	border-radius:220px / 120px;
+	
+   
+}
+
+.dd:before{
+content:"";
+	position:absolute;
+	z-index: 1;
+	bottom:-30px;
+	left:50%;
+	height:30px;
+	border-left:60px solid #bdbbbb;
+	background:#bdbbbb;
+	/* css3 */
+/*	два значения определяют горизонтальный 
+и вертикальный радиус соответственно  */
+-webkit-border-bottom-left-radius:80px 50px;
+	-moz-border-radius-bottomleft:80px 50px;
+	border-bottom-left-radius:80px 50px;
+	/*	позиционируем элемент
+по оси x и y соответственно */
+-webkit-transform:translate(0, -2px);
+	-moz-transform:translate(0, -2px);
+	-ms-transform:translate(0, -2px);
+	-o-transform:translate(0, -2px);
+	transform:translate(0, -2px);
+}
+.dd:after{
+content:"";
+	position:absolute;
+	z-index:1;
+	bottom:-32px;
+	left:68%;
+	width:60px;
+	height:32px;
+	background:#f9c991;
+	/* css3 */
+-webkit-border-bottom-left-radius:40px 60px;
+	-moz-border-radius-bottomleft:40px 60px;
+	border-bottom-left-radius: -radius:40px 60px;
+	-webkit-transform:translate(-30px, -2px);
+	-moz-transform:translate(-30px, -2px);
+	-ms-transform:translate(-30px, -3px);
+	-o-transform:translate(-30px, -2px);
+	transform:translate(-30px, -2px);
+	
+}
+.dd h2 {
+	font-size: 24px;
+  font-family: "Arial";
+  color:#72088d;
+  line-height: 1.5;
+}
+.dd h3{
+	font-size: 20px;
+  font-family: "Arial";
+  color: rgb( 255, 255, 255 );
+  line-height: 1.5;
+}
+.dd p{
+	font-size: 18px;
+  font-family: "Arial";
+  color: rgb( 255, 255, 255 );
+  line-height: 1.5;
+	
+}
+
+$color-primary: #4d0184;
+
+.error{
+  background-color: $color-primary;
+}
+
+h1 {
+  font-size: 300px;
+  width:5550px;
+  position: absolute;
+  top:-100px;
+  left: 400px;
+  position:relative;
+	
+   
+ background: url('../image/s.jpg') repeat;
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+   animation: updown 2s linear infinite;
+}
+  
+.shadow {
+    content: "";
+    display: block;
+	
+   
+    background-color: rgba(#323232, .5);
+   // margin: 10px auto;
+    //border-radius: 50%;
+    animation: shadow 2s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-8px);
+      background-position: 0 25px;
+    }
+  
+    50% {
+      transform: translateY(8px);
+      background-position: 0 -25px;
+    }
+  
+    75% {
+      transform: translateY(0);
+      background-position: 0 0px;
+    }
+  
+    100% {
+      transform: translateY(-8px);
+      background-position: 0 25px;
+    }
+}
+
+@keyframes shadow {
+    0% {
+      transform: scale(0.8);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    75% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0.8);
+    }
+}
