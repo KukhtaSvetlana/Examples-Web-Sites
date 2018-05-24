@@ -1,0 +1,121 @@
+#slider{
+	margin:0 auto;
+	width:620px;
+	height:254px;
+	overflow:hidden;
+	position:relative;
+}
+#polosa{
+	width:2286px;
+	overflow:hidden;
+	position:relative;
+	left:0;
+	transition: all ease 1s;
+}
+
+.Representatives:hover .Inform_representatives{ 
+	height: auto;
+    top: 0;
+    background: rgba(23, 219, 153, 0.85);
+    padding: 45px 35px;
+}
+
+.Representatives:hover .name{
+	color: #262d49;
+}
+.Inform_representatives a{
+   display: block;
+    padding: 7px 25px;
+    margin-top: 20px;
+    text-align: center;
+    color: #262d49;
+    border: 1px solid #262d49;
+    text-decoration: none;
+    height:40px;
+	width:130px;
+}
+.Representatives{
+	/*width:254px;*/
+	margin-right:2px;
+	float:left;
+	position:relative;
+}
+.Foto_representatives img{
+	width:250px;
+	height:inherit;
+}
+.Inform_representatives{
+	position:absolute;
+	bottom:0;
+	width:253px;
+	height: 130px;
+	background: rgba(14, 11, 11, 0.6);
+}
+.Inform_representatives .name{
+	font-family: "Time New Roman", Arial,sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #6ae5bc;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.Inform_representatives p{
+	padding:0;
+	margin:0;
+	font-family: "Time New Roman", Arial,sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+	padding-left: 20px;
+}
+.Inform_representatives span{
+	display:block;
+	color: #efd500;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+.right{
+	position:absolute;
+	top:95px;
+	left:0;
+}
+.left{
+	position:absolute;
+	top:95px;
+	right:0;
+}
+button{
+	border:none;
+	background-color: rgba(255, 255, 255, 0.65);
+	width:27px;
+	height:58px;
+	outline: none;
+}
+.left button{
+	outline: none;
+}
+.right button{
+	outline: none;
+}
+.carousel-control-next-icon {
+	margin:0 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #27364e;
+	border-bottom: 5px solid transparent;
+}
+.carousel-control-next-icon:hover{
+	border-left: 10px solid #ffffff;
+}
+.carousel-control-prev-icon {
+    background-image: none;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid #27364e;
+    border-bottom: 5px solid transparent;
+}
+.carousel-control-prev-icon:hover{
+	border-right: 10px solid #ffffff;
+}
